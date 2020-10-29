@@ -103,7 +103,8 @@ public class Pruebas {
         }
         break;
     }
-        
+        case 4:
+        //Caracol
         System.out.println();
 		int[] array1 = new int[5];
 		int array2[] = new int[5];
@@ -125,10 +126,28 @@ public class Pruebas {
 		Random r = new Random();
 		for(int i=0;i<pArray.length;i++){
 			pArray[i] = r.nextInt(50) + 1;
-		}
-	}
-
+		
+                        case 5:    
+	  Scanner sc;
+        sc=new Scanner(System.in);
+        
+        System.out.println("Este codigo solo se ejecutara si los tamaños de las matrices "
+                + "son de 2*2 o 3*3");
+        System.out.println("");
+        System.out.println("Ingrese el tamaño de la fila");
+        int fila=sc.nextInt();
+        System.out.println("");
+        System.out.println("Ingrese el tamaño de la columna");
+        int columna=sc.nextInt();
+        
+        comparacion(fila, columna);
+        break;
+                }
     }
+}
+
+    
+
 
 
 
