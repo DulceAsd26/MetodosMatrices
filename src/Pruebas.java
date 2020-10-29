@@ -5,7 +5,10 @@ import static Matricesejercicios.Matrizinversa.llenarMatriz;
 import static Matricesejercicios.Matrizinversa.matrizInversa;
 /*import Matricesejercicios.VerficacionMagico;*/
 import static Matricesejercicios.VerficacionMagico.esMagico;
-
+//Caracol
+import Matricesejercicios.Caracol;
+//Matrices transpuestas
+import static Matricesejercicios.Matricestranspuestas.comparacion;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
@@ -20,8 +23,8 @@ public class Pruebas {
         
         System.out.println("1. Cuadro Magico");
         System.out.println("2. Matriz inversa");
-        System.out.println("3. Matrices comunes");
-        System.out.println("4. El caracol");
+        System.out.println("3. El caracol");
+        System.out.println("4. Matrices comunes");
         System.out.println("5. Matrices transpuestas");
     
         System.out.println();
@@ -61,11 +64,11 @@ public class Pruebas {
         
         
         case 3:
-        //Caracol
-            
+        //Caracol   
         int n=5;
         String [][] matriz = new String [n][n];
-        int a=0, b=n-1,valor=1;
+        int a=0, b=n-1;
+        int valor=1;
         
         
         for(int j = 0; j < matriz.length; j++){
@@ -102,9 +105,10 @@ public class Pruebas {
             System.out.println();//Salto de linea cuando se cambia de fila
         }
         break;
-    }
+    
+        
         case 4:
-        //Caracol
+        //Matrices comnes
         System.out.println();
 		int[] array1 = new int[5];
 		int array2[] = new int[5];
@@ -121,13 +125,14 @@ public class Pruebas {
 			}
 		}
 	}
-	
+    }
 	static void llenarArray(int[] pArray){
 		Random r = new Random();
-		for(int i=0;i<pArray.length;i++){
+		for(int i=0;i<pArray.length;i++)
 			pArray[i] = r.nextInt(50) + 1;
-		
-                        case 5:    
+        
+                
+         //Matrices transpuestas      
 	  Scanner sc;
         sc=new Scanner(System.in);
         
@@ -141,10 +146,12 @@ public class Pruebas {
         int columna=sc.nextInt();
         
         comparacion(fila, columna);
-        break;
+        
                 }
-    }
-}
+             }
+
+          
+
 
     
 
